@@ -1,5 +1,8 @@
 # Airdrop Hunter
 
+Notes:
+// USDC = 0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4 // Zksync
+
 ## Technology Stack & Tools
 
 - Solidity (Writing Smart Contract)
@@ -9,32 +12,39 @@
 - [Netlify](https://www.netlify.com/) (Cloud Service)
 
 ## Requirements For Initial Setup
+
 - Install [NodeJS](https://nodejs.org/en/). We recommend using the latest LTS (Long-Term-Support) version, and preferably installing NodeJS via [NVM](https://github.com/nvm-sh/nvm#intro).
 - Create an [Alchemy](https://www.alchemy.com/) account, you'll need to create an API key, and use the Goerli RPC URL for testing.
 - Create a [Netlify](https://www.netlify.com/) account.
 
 ## Setting Up
+
 ### 1. Clone/Download the Repository
 
 ### 2. Create a GitHub Repository
+
 Create a GitHub repository at [https://github.com/new](https://github.com/new).
 
 ### 3. Connect to GitHub Repository
+
 In your terminal, execute:
 `git remote set-url origin <GIT_URL>`
 
 For the **GIT_URL**, this will be the .git link to your personal repository on GitHub.
 
 ### 4. Push to GitHub Repository
+
 In your terminal, execute:
 `git push origin master`
 
 ### 5. Login to Netlify
+
 Once logged in to Netlify, under the **Team overview** tab, scroll down to **Sites** and click on **Import from Git**
 
 Connect to your GitHub account, select the repository you created, and click **Deploy site**
 
 ### 6. Configure Environment Variables
+
 While looking at the site's configuration, at the top tab, click on **Site settings**.
 
 On the sidebar, click on **Environment variables**, then click on **Add a variable**.
@@ -55,4 +65,5 @@ Here you can add an environment variable, you'll need to add 9 variables:
 - **SWAP_AMOUNT="25000000000000000"** (0.025 ETH)
 
 ### Note
+
 If you've set the environment variables after deployment has finished you may want to redeploy. Under the **Deploys** tab, you'll see a list of previous deploys done, there should be a drop down titled **Trigger deploy**. Click on the dropdown, and select the **Clear cache and deploy site** to redeploy the site.
